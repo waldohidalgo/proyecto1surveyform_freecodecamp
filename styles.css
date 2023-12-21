@@ -148,5 +148,8 @@ label[for="identificacion_denuncia_input_file_boton"] {
 }
 
 .fa-cloud-upload {
-  margin-left: 10px;
+  margin-left: 0;
+  @media screen and (min-width: 480px) {
+    margin-left: 10px;
+  }
 }
