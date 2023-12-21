@@ -133,7 +133,7 @@ input {
   display: none;
 }
 
-label[for="identificacion_denuncia_input_file_boton"] {
+label[title="Seleccionar Archivo"] {
   border: 1px solid black;
   padding: 5px;
   border-radius: 5px;
