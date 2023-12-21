@@ -1,0 +1,152 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#name-label,
+#name,
+#last-name-label,
+#last-name,
+#email-label,
+#email,
+#number-label,
+#number {
+  display: block;
+  width: 80%;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+legend {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 3rem;
+}
+
+form {
+  box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
+
+  background-color: #f1f7fc;
+  width: 95%;
+  max-width: 800px;
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 0 auto 5rem auto;
+  padding: 15px 5px;
+  @media screen and (min-width: 480px) {
+    width: 80%;
+  }
+}
+#submit {
+  display: block;
+
+  width: 80%;
+  margin: 1rem auto;
+  padding: 10px;
+  font-weight: 700;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
+
+#description {
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.identificacion_denuncia_label {
+  display: block;
+  text-align: initial;
+}
+
+.identificacion_denuncia__titulo {
+  display: block;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#identificacion_laboral label {
+  text-align: center;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#identificacion_laboral label:last-of-type {
+  margin-top: 1rem;
+}
+
+#dropdown,
+#relación_laboral {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  width: 100%;
+  @media screen and (min-width: 480px) and (max-width: 720px) {
+    width: 80%;
+  }
+  @media screen and (min-width: 721px) {
+    width: 60%;
+  }
+}
+
+#identificacion label {
+  text-align: center;
+}
+
+#identificacion_denuncia_input_file {
+  display: none;
+}
+
+label[for="identificacion_denuncia_input_file_boton"] {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #192b43;
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fa-cloud-upload {
+  margin-left: 10px;
+}

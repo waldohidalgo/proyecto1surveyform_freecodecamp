@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canal de Denuncias</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+3&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1 id="title">Canal de Denuncias</h1>
+    <p id="description">
+      Este formulario es un medio de exposición y comunicación para denunciar
+      todo tipo de comportamiento que vaya en contra de la ética profesional.
+      Comportamientos ajenos, repudiados y no tolerados por las políticas de la
+      empresa
+    </p>
+    <form id="survey-form">
+      <fieldset id="identificacion">
+        <legend id="identificación">Identificación</legend>
+        <label id="name-label" for="name">Nombre</label>
+        <input id="name" type="text" required placeholder="Ingresa tu nombre" />
+        <label id="last-name-label" for="last-name">Apellido</label>
+        <input
+          id="last-name"
+          type="text"
+          required
+          placeholder="Ingresa tu apellido"
+        />
+        <label id="email-label" for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="Ingresa tu email"
+        />
+        <label id="number-label" for="number">Edad</label>
+        <input
+          id="number"
+          type="number"
+          min="1"
+          max="100"
+          placeholder="Ingresa tu edad"
+        />
+      </fieldset>
+
+      <fieldset id="identificacion_laboral">
+        <legend>Identificación Laboral</legend>
+        <label for="dropdown">¿Cuál es su cargo?</label>
+        <select id="dropdown">
+          <option>Analista</option>
+          <option>Jefatura</option>
+          <option>Operador</option>
+        </select>
+        <label for="relación_laboral"
+          >¿Cuál es su relación laboral con el individuo objeto de
+          denuncia?</label
+        >
+        <select id="relación_laboral">
+          <option>Es mi jefatura directa</option>
+          <option>No existe relación laboral directa</option>
+          <option>Es mi subordinado</option>
+        </select>
+      </fieldset>
+      <fieldset id="identificacion_denuncia">
+        <legend>Identificación de denuncia</legend>
+        <label class="identificacion_denuncia__titulo"
+          >¿Su denuncia se relaciona con los siguientes tópicos?</label
+        >
+        <label class="identificacion_denuncia_label"
+          ><input name="denuncia" type="checkbox" value="acoso laboral" />Acoso
+          Laboral</label
+        >
+        <label class="identificacion_denuncia_label"
+          ><input
+            name="denuncia"
+            type="checkbox"
+            value="discriminacion"
+          />Discriminación</label
+        >
+        <label class="identificacion_denuncia_label"
+          ><input
+            name="denuncia"
+            type="checkbox"
+            value="negación del ejercer la profesión"
+          />Negación del ejercicio de la profesión</label
+        >
+        <label class="identificacion_denuncia_label"
+          ><input
+            name="denuncia"
+            type="checkbox"
+            value="intimidación"
+          />Violencia Verbal</label
+        >
+        <label class="identificacion_denuncia_label"
+          ><input
+            name="denuncia"
+            type="checkbox"
+            value="Obstaculización en el acceso a oportunidades de desarrollo profesional"
+          />Obstaculización y negación en el acceso a oportunidades de
+          desarrollo profesional</label
+        >
+        <label class="identificacion_denuncia__titulo"
+          >¿Posee maneras de documentar y respaldar lo anterior?
+        </label>
+        <label class="identificacion_denuncia_label"
+          ><input name="respaldo" value="si" type="radio" />Sí</label
+        >
+        <label class="identificacion_denuncia_label"
+          ><input name="respaldo" value="no" type="radio" />No</label
+        >
+        <label
+          class="identificacion_denuncia__titulo"
+          for="identificacion_denuncia_input_file"
+          >En caso de que su respuesta a la pregunta anterior haya sido SI,
+          adjuntar respaldo:
+        </label>
+        <label
+          for="identificacion_denuncia_input_file_boton"
+          title="Seleccionar Archivo"
+          >Seleccionar Archivo <i class="fa fa-cloud-upload"></i></label
+        ><input id="identificacion_denuncia_input_file" type="file" />
+        <label
+          class="identificacion_denuncia__titulo"
+          for="textarea_mayordetalle"
+          >Descripción de la denuncia, involucrados y fechas. Ser lo más
+          detallado posible en su relato.</label
+        >
+        <textarea
+          id="textarea_mayordetalle"
+          rows="10"
+          placeholder="Ingresa con el mayor detalle posible cada una de las situaciones, personas y fechas en los cuales se han producido los hechos"
+          required
+        ></textarea>
+      </fieldset>
+
+      <input
+        type="submit"
+        id="submit"
+        title="Enviar denuncia"
+        value="Enviar denuncia "
+      />
+    </form>
+  </body>
+</html>
